@@ -1,0 +1,102 @@
+@media screen and (max-width: 1100px){
+    .head{
+        display: none;
+    }
+    .mini-nav{
+        display: flex;
+    }
+    .img{
+        display: none;
+    }
+    .img1{
+        display: flex;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    /* body{
+        width:fit-content
+    } */
+    .logo{
+        font-size: 1.5rem;
+        margin-left: -45px;
+    }
+    .resumebutton{
+        margin-left: 15px;
+        border-width: 0px;
+    }
+    .mini-nav{
+        margin-right: 930px;
+        
+    }
+    .imgsize{
+        margin-top: 50px;
+        margin-left: -15px;
+        width: auto;
+        height: auto;
+    }
+    .biotext{
+        margin-top: -0px;
+        margin-left: 50px;
+    }
+    .up{
+        display: none;
+    }
+    .about{
+        margin-top: -150px;
+    }
+    .aboutborder{
+        width: auto;
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 650px;
+    }
+    .abouttext{
+        margin-left: 110px;
+        margin-top: 15px;
+    }
+    .para{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .container{
+        padding-left: 40px;
+        margin-top: 380px;
+    }
+    .heading{
+        margin-left: -180px;
+    }
+    .technical-bars{
+        flex-direction: column;
+    }
+    .split2{
+        margin-left: -0px;
+        margin-top: 35px;
+    }
+    .bar{
+        width: 50%;
+        height: auto;
+    }
+    .text_p1{
+        margin-left: 38%;
+        margin-top: 350px;
+    }
+    .title{
+        margin-left: 35%;
+    }
+    .contact-info-upper-contain{
+        border: none;
+    }
+    .contdiv{
+        flex-direction: column;
+    }
+    .cont3{
+        margin-left: 28%;
+    }
+    .temp2{
+        margin-left: 25%;
+    }
+}

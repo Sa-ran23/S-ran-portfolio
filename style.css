@@ -1,0 +1,427 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+}
+/* .home{
+    display: none;
+} */
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+.head a{
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 500;
+    transition: .3s;
+}
+.head a:hover{
+    color: #c104f0;
+}
+.s{
+    color: #c104f0;
+}
+.resumebutton{
+    margin-right: 55px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #c104f0;
+    border-radius: 10px;
+    transition: .3s;
+    border: 1px solid #a09f9f;
+}
+.resumebutton:hover{
+    color: #c104f0;
+    background: transparent;
+}
+.slidetext{
+    font-size: 18px;
+}
+.biotext{
+    margin-left: 200px;
+    margin-top: 200px;
+}
+.nametext{
+    font-size: 45px;
+    font-weight: bold;
+}
+.name{
+    color: #c104f0;
+}
+.img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding-left: 170px;
+    pointer-events: none;
+}
+.p1{
+    font-size: 20px;
+    
+}
+.hirebutton a{
+    color: #fff;
+    padding: 7px 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #c104f0;
+    border-radius: 8px;
+    transition: .3s;
+    border: 1px solid #a09f9f;
+}
+.home{
+    height: auto;
+}
+.hirebutton{
+    margin-top: 13px;
+}
+.hirebutton a:hover{
+    color: #c104f0;
+    background: transparent;
+}
+.about{
+    margin-top: 200px;
+    height: 570px;
+}
+/* about */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.aboutborder{
+    border: 1px solid #c104f0;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 350px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.abouttext{
+    margin-left: 520px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 60px;
+}
+.para{
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.parasts{
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* skills*/
+.container{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    padding-left: 120px;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    margin-left: 450px;
+}
+.bar{
+    font-size: 23px;
+}
+.technical-bars .bar{
+    margin: 40px 0;
+}
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.technical-bars .bar .indfo{
+    margin-bottom: 5px;
+}
+.technical-bars .bar .indfo span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #c104f0;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 65%;
+}
+.progress-line.c span{
+    width: 50%;
+}
+.progress-line.java span{
+    width: 65%;
+}
+.progress-line.php span{
+    width: 40%;
+}
+.progress-line.mysql span{
+    width: 50%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "65%";
+}
+.progress-line.c span::after{
+    content: "50%";
+}
+.progress-line.java span::after{
+    content: "65%";
+}
+.progress-line.php span::after{
+    content: "40%";
+}
+.progress-line.mysql span::after{
+    content: "50%";
+}
+
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+.technical-bars{
+    display: flex;
+    width: 270%;
+    
+}
+.split1{
+    width: 550px;
+}
+.split2{
+    margin-left: 110px;
+    width: 550px;
+}
+
+/*contact*/
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 110vh;
+}
+.contact-info-upper-contain{
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53)0.1rem solid;
+    border-color: rgb(163,163,163);
+    margin: 2rem auto;
+    padding: 0.5rem;
+    height: 300px;
+    width: 600px;
+}
+.contact-info-contain{
+    margin-top: 50px;
+}
+.text_p1{
+    margin-left: 585px;
+}
+.title{
+    margin-left: 570px;
+    margin-top: 10px;
+}
+.icom{
+    color: #000;
+    font-size: 40px;
+}
+.cont{
+    color: #555;
+    text-decoration: none;
+    margin-left: 160px;
+}
+.cont3{
+    margin-left: 280px;
+}
+.contdiv{
+    display: flex;
+}
+.temp{
+    margin-left: 70px;
+}
+.temp1{
+    margin-left: 150px;
+}
+.temp2{
+    margin-left: 260px;
+}
+
+/*footer*/
+
+footer{
+    height: 10vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
+}
+.up{
+    margin-top: 140px;
+    margin-left: 90%;
+    font-size: 50px;
+    position: fixed;
+    color: #c104f0;
+}
+
+/*mini*/
+
+.mini-nav{
+    display: none;
+}
+.mini-menu{
+    position: relative;
+    display: inline-block;
+}
+.mini-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.mini-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.head-link{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #d993eb;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    border-radius: 10px;
+}
+.head-link a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.head-link li{
+    list-style: none;
+}
+.head-link.open{
+    max-height: 300px;
+}
+.mini-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);
+}
+.mini-icon.open span:nth-child(2){
+   opacity: 0;
+}
+.mini-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+.mini-icon span:first-child{
+    transform: none;
+}
+.mini-icon span:first-child{
+    opacity: 1;
+}
+.mini-icon span:first-child{
+    transform: none;
+}
+.img1{
+    display: none;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+    <header>
+        <h1 class="logo"><span class="s">S</span>aran.</h1>
+        <nav class="head">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="Sarankumar_resume.pdf" download="Sarankumar_resume.pdf" class="resumebutton">Resume</a>
+        <nav class="mini-nav">
+            <div class="mini-menu">
+                <div class="mini-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="head-link">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <section class="home" id="home">.
+    </section>
+    <section class="homed" id="homes">
+        <div class="img">
+            <img src="img2.png" alt="" width="1100px" height="600px">
+        </div>
+        <div class="img1">
+            <img src="img.png" alt="" width="1100px" height="600px" class="imgsize">
+        </div>
+        <div class="biotext">
+            <div class="nametext">Hi, I'm <span class="name">Sarankumar</span></div>
+            <span class="slidetext"></span>
+            <div class="p1">pursuing in web development</div>
+            <div class="p1">Java Developer</div>
+            <div class="hirebutton">
+                <a href="#contact" >Hire me</a>
+            </div>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".slidetext",{
+                strings : ["Developer", "Fresher"],
+                typeSpeed : 150,
+                backSpeed : 150,
+                loop : true
+            })
+        </script>
+       
+    </section>
+    <div class="up"><a href="#home"><i class='bx bx-caret-up-circle'></i></a></div>
+    <section class="about" id="about">
+        <div class="aboutborder">
+            <div class="abouttext">About Me</div>
+            <div class="para"><spam class="parasts">I am Sarankumar M</spam>, a recent graduate with a Bachelor of Computer Applications (BCA) from Erode Arts and Science College, where I graduated with a 74.34% CGPA.
+                I have a solid foundation in software development, database management, and web technologies.
+                My academic projects have refined my problem-solving skills and attention to detail. 
+                I am a quick learner and a team player, eager to contribute to innovative projects within a dynamic and growth-oriented organization.
+                I am enthusiastic about technology and keen on leveraging my technical skills to drive continuous improvement.In addition to my technical skills, I have completed a 15-day internship at LITZ Tech, where I gained hands-on experience in web development using C#, HTML, CSS, and Visual Studio. I also completed a Python course at Livewire and worked on a final year project developing a Staff Multi-Purpose Management System.</div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="container">
+            <h1 class="heading">Skills</h1>
+            <div class="technical-bars">
+                <div class="split1">
+                <div class="bar"><i class='bx bxl-html5'></i>
+                    <div class="indfo">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class='bx bxl-css3'></i>
+                    <div class="indfo">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                 </div>
+                <div class="bar"><i class='bx bx-code'></i>
+                    <div class="indfo">
+                        <span>C</span>
+                    </div>
+                    <div class="progress-line c">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i class='bx bxl-java'></i>
+                    <div class="indfo">
+                        <span>JAVA</span>
+                    </div>
+                    <div class="progress-line java">
+                        <span></span>
+                    </div>
+                 </div>
+                 </div>
+                 <div class="split2">
+                 <div class="bar"><i class='bx bxl-php'></i>
+                    <div class="indfo">
+                        <span>PHP</span>
+                    </div>
+                    <div class="progress-line php">
+                        <span></span>
+                    </div>
+                 </div>
+                 <div class="bar"><i class='bx bx-data'></i>
+                    <div class="indfo">
+                        <span>MYSQL</span>
+                    </div>
+                    <div class="progress-line mysql">
+                        <span></span>
+                    </div>
+                 </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <p class="text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-contain">
+            <div class="contdiv">
+            <div class="contact-info-contain">
+                <a href="mailto:sarankumar2603@gmail.com" class="cont cont1"><i class='bx bxl-gmail icom'></i>
+                    <div class="temp">sarankumar2603@gmail.com</div></a>
+            </div>
+            <div class="contact-info-contain">
+                <a href="https://www.linkedin.com/in/saran-kumar-4a8722259" class="cont cont2"><i class='bx bxl-linkedin icom'></i>
+                    <div class="temp1">LinkedIn</div></a>
+            </div>
+            </div>
+            <div class="contact-info-contain">
+                <a href="https://www.instagram.com/s__ran_?igsh=MThtZ2pvOWRzN2g5Zg==" class="cont cont3"><i class='bx bxl-instagram-alt icom'></i>
+                    <div class="temp2">Instagram</div></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <p>Copyright &#169; 2024 sarankumar. All Rights Reserved.</p>
+        </footer>
+        <!-- <div class="bottom">
+            <div class=""></div>
+        </div> -->
+    </section>
+</body>
+<script src="portfolio.js"></script>
+</html>
